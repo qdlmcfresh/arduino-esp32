@@ -76,6 +76,19 @@ set(LIBRARY_SRCS
   libraries/WiFi/src/WiFiSTA.cpp
   libraries/WiFi/src/WiFiUdp.cpp
   libraries/Wire/src/Wire.cpp
+  libraries/NeoPixelBus/src/internal/HtmlColorShortNames.cpp
+  libraries/NeoPixelBus/src/internal/RgbColor.cpp
+  libraries/NeoPixelBus/src/internal/RgbwColor.cpp
+  libraries/NeoPixelBus/src/internal/NeoGamma.cpp
+  libraries/NeoPixelBus/src/internal/NeoPixelAnimator.cpp
+  libraries/NeoPixelBus/src/internal/HtmlColor.cpp
+  libraries/NeoPixelBus/src/internal/HsbColor.cpp
+  libraries/NeoPixelBus/src/internal/HslColor.cpp
+  libraries/NeoPixelBus/src/internal/HtmlColorNameStrings.cpp
+  libraries/NeoPixelBus/src/internal/NeoEsp32RmtMethod.cpp
+  libraries/NeoPixelBus/src/internal/HtmlColorNames.cpp
+  libraries/NeoPixelBus/src/internal/NeoEsp8266UartMethod.cpp
+  libraries/NeoPixelBus/src/internal/SegmentDigit.cpp
   )
 
 set(AZURE_SRCS
@@ -201,6 +214,7 @@ set(COMPONENT_ADD_INCLUDEDIRS
   libraries/WiFiClientSecure/src
   libraries/WiFi/src
   libraries/Wire/src
+  libraries/NeoPixelBus/src
   )
 
 set(COMPONENT_PRIV_INCLUDEDIRS cores/esp32/libb64)
