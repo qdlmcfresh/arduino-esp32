@@ -4,3 +4,6 @@
 [submodule "libraries/NeoPixelBus"]
 	path = libraries/NeoPixelBus
 	url = https://github.com/Makuna/NeoPixelBus
+[submodule "libraries/EasyButton"]
+	path = libraries/EasyButton
+	url = https://github.com/evert-arias/EasyButton

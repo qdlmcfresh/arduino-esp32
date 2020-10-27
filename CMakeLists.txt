@@ -89,6 +89,12 @@ set(LIBRARY_SRCS
   libraries/NeoPixelBus/src/internal/HtmlColorNames.cpp
   libraries/NeoPixelBus/src/internal/NeoEsp8266UartMethod.cpp
   libraries/NeoPixelBus/src/internal/SegmentDigit.cpp
+  libraries/EasyButton/src/Sequence.cpp
+  libraries/EasyButton/src/EasyButtonVirtual.cpp
+  libraries/EasyButton/src/EasyButtonBase.cpp
+  libraries/EasyButton/src/EasyButton.cpp
+  libraries/EasyButton/src/EasyButtonTouch.cpp
+
   )
 
 set(AZURE_SRCS
@@ -215,6 +221,7 @@ set(COMPONENT_ADD_INCLUDEDIRS
   libraries/WiFi/src
   libraries/Wire/src
   libraries/NeoPixelBus/src
+  libraries/EasyButton/src
   )
 
 set(COMPONENT_PRIV_INCLUDEDIRS cores/esp32/libb64)
