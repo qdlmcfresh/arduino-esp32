@@ -68,7 +68,7 @@ extern const rtc_io_desc_t rtc_io_desc[SOC_RTCIO_PIN_COUNT];
  * This is an internal function of the driver, and is not usually useful
  * for external use.
  */
-extern const int rtc_io_num_map[SOC_GPIO_PIN_COUNT];
+extern const int rtc_io_num_map[GPIO_PIN_COUNT];
 
 #ifdef CONFIG_RTCIO_SUPPORT_RTC_GPIO_DESC
 /**

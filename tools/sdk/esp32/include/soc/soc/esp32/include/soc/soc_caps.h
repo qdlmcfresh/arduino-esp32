@@ -103,7 +103,7 @@
 /*-------------------------- GPIO CAPS ---------------------------------------*/
 // ESP32 has 1 GPIO peripheral
 #define SOC_GPIO_PORT                   (1)
-#define SOC_GPIO_PIN_COUNT              40
+#define GPIO_PIN_COUNT              40
 
 // SOC_GPIO_SUPPORT_RTC_INDEPENDENT not defined. On ESP32 those PADs which have RTC functions must
 // set pullup/down/capability via RTC register. On ESP32-S2, Digital IOs have their own registers to

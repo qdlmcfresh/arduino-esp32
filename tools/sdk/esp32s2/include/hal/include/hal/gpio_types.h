@@ -70,7 +70,7 @@ typedef enum {
 #define GPIO_SEL_37             ((uint64_t)(((uint64_t)1)<<37))  /*!< Pin 37 selected */
 #define GPIO_SEL_38             ((uint64_t)(((uint64_t)1)<<38))  /*!< Pin 38 selected */
 #define GPIO_SEL_39             ((uint64_t)(((uint64_t)1)<<39))  /*!< Pin 39 selected */
-#if SOC_GPIO_PIN_COUNT > 40
+#if GPIO_PIN_COUNT > 40
 #define GPIO_SEL_40             ((uint64_t)(((uint64_t)1)<<40))  /*!< Pin 40 selected */
 #define GPIO_SEL_41             ((uint64_t)(((uint64_t)1)<<41))  /*!< Pin 41 selected */
 #define GPIO_SEL_42             ((uint64_t)(((uint64_t)1)<<42))  /*!< Pin 42 selected */
@@ -122,7 +122,7 @@ typedef enum {
 #define GPIO_PIN_REG_37          IO_MUX_GPIO37_REG
 #define GPIO_PIN_REG_38          IO_MUX_GPIO38_REG
 #define GPIO_PIN_REG_39          IO_MUX_GPIO39_REG
-#if SOC_GPIO_PIN_COUNT > 40
+#if GPIO_PIN_COUNT > 40
 #define GPIO_PIN_REG_40          IO_MUX_GPIO40_REG
 #define GPIO_PIN_REG_41          IO_MUX_GPIO41_REG
 #define GPIO_PIN_REG_42          IO_MUX_GPIO42_REG
@@ -179,7 +179,7 @@ typedef enum {
     GPIO_NUM_37 = 37,   /*!< GPIO37, input mode only(ESP32) / input and output(ESP32-S2) */
     GPIO_NUM_38 = 38,   /*!< GPIO38, input mode only(ESP32) / input and output(ESP32-S2) */
     GPIO_NUM_39 = 39,   /*!< GPIO39, input mode only(ESP32) / input and output(ESP32-S2) */
-#if SOC_GPIO_PIN_COUNT > 40
+#if GPIO_PIN_COUNT > 40
     GPIO_NUM_40 = 40,   /*!< GPIO40, input and output */
     GPIO_NUM_41 = 41,   /*!< GPIO41, input and output */
     GPIO_NUM_42 = 42,   /*!< GPIO42, input and output */
