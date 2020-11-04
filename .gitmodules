@@ -1,3 +1,9 @@
 [submodule "libraries/NimBLE-Arduino"]
 	path = libraries/NimBLE-Arduino
 	url = https://github.com/h2zero/NimBLE-Arduino
+[submodule "libraries/EasyButton"]
+	path = libraries/EasyButton
+	url = https://github.com/evert-arias/EasyButton
+[submodule "libraries/NeoPixelBus"]
+	path = libraries/NeoPixelBus
+	url = https://github.com/Makuna/NeoPixelBus

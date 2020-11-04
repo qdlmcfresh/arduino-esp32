@@ -6,7 +6,7 @@ tools/esptool.exe
 tools/mkspiffs/mkspiffs
 tools/mkspiffs/mkspiffs.exe
 .DS_Store
- 
+build 
 #Ignore files built by Visual Studio/Visual Micro
 [Dd]ebug*/
 [Rr]elease*/
