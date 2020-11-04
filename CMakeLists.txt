@@ -120,6 +120,8 @@ set(BLE_SRCS
 set(includedirs
   variants/esp32/
   cores/esp32/
+  tools/sdk/esp32/include/esp_littlefs/include
+  tools/sdk/esp32/include/esp_littlefs/src
   libraries/ArduinoOTA/src
   libraries/AsyncUDP/src
   libraries/BLE/src
@@ -154,7 +156,6 @@ set(requires spi_flash mbedtls mdns esp_adc_cal)
 set(priv_requires fatfs nvs_flash app_update spiffs bootloader_support openssl bt tinyusb main)
 
 idf_component_register(INCLUDE_DIRS ${includedirs} PRIV_INCLUDE_DIRS ${priv_includes} SRCS ${srcs} REQUIRES ${requires} PRIV_REQUIRES ${priv_requires})
-
 if(IDF_TARGET STREQUAL "esp32")
 target_compile_options(${COMPONENT_TARGET} PUBLIC -DARDUINO=10812 -DARDUINO_ESP32_DEV -DARDUINO_ARCH_ESP32 -DARDUINO_BOARD="ESP32_DEV" -DARDUINO_VARIANT="esp32" -DESP32)
 endif()
