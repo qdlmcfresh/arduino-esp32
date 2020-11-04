@@ -80,6 +80,135 @@ set(LIBRARY_SRCS
   libraries/WiFi/src/WiFiSTA.cpp
   libraries/WiFi/src/WiFiUdp.cpp
   libraries/Wire/src/Wire.cpp
+  libraries/NimBLE-Arduino/src/NimBLECharacteristic.cpp
+  libraries/NimBLE-Arduino/src/FreeRTOS.cpp
+  libraries/NimBLE-Arduino/src/NimBLE2904.cpp
+  libraries/NimBLE-Arduino/src/NimBLESecurity.cpp
+  libraries/NimBLE-Arduino/src/NimBLEBeacon.cpp
+  libraries/NimBLE-Arduino/src/esp-hci/src/esp_nimble_hci.c
+  libraries/NimBLE-Arduino/src/NimBLEHIDDevice.cpp
+  libraries/NimBLE-Arduino/src/NimBLEAdvertisedDevice.cpp
+  libraries/NimBLE-Arduino/src/NimBLERemoteService.cpp
+  libraries/NimBLE-Arduino/src/NimBLEDevice.cpp
+  libraries/NimBLE-Arduino/src/porting/npl/freertos/src/npl_os_freertos.c
+  libraries/NimBLE-Arduino/src/porting/npl/freertos/src/nimble_port_freertos.c
+  libraries/NimBLE-Arduino/src/porting/nimble/src/hal_timer.c
+  libraries/NimBLE-Arduino/src/porting/nimble/src/os_msys_init.c
+  libraries/NimBLE-Arduino/src/porting/nimble/src/nimble_port.c
+  libraries/NimBLE-Arduino/src/porting/nimble/src/endian.c
+  libraries/NimBLE-Arduino/src/porting/nimble/src/os_mempool.c
+  libraries/NimBLE-Arduino/src/porting/nimble/src/mem.c
+  libraries/NimBLE-Arduino/src/porting/nimble/src/os_mbuf.c
+  libraries/NimBLE-Arduino/src/porting/nimble/src/os_cputime_pwr2.c
+  libraries/NimBLE-Arduino/src/porting/nimble/src/os_cputime.c
+  libraries/NimBLE-Arduino/src/NimBLERemoteCharacteristic.cpp
+  libraries/NimBLE-Arduino/src/NimBLEAdvertising.cpp
+  libraries/NimBLE-Arduino/src/NimBLEServer.cpp
+  libraries/NimBLE-Arduino/src/NimBLEUtils.cpp
+  libraries/NimBLE-Arduino/src/NimBLEAddress.cpp
+  libraries/NimBLE-Arduino/src/NimBLEEddystoneURL.cpp
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/sha256.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/ecc_platform_specific.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/ecc_dh.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/ccm_mode.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/utils.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/ecc_dsa.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/aes_decrypt.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/hmac.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/cbc_mode.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/aes_encrypt.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/cmac_mode.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/ecc.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/ctr_prng.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/ctr_mode.c
+  libraries/NimBLE-Arduino/src/ext/tinycrypt/src/hmac_prng.c
+  libraries/NimBLE-Arduino/src/nimble/host/services/ias/src/ble_svc_ias.c
+  libraries/NimBLE-Arduino/src/nimble/host/services/gap/src/ble_svc_gap.c
+  libraries/NimBLE-Arduino/src/nimble/host/services/bas/src/ble_svc_bas.c
+  libraries/NimBLE-Arduino/src/nimble/host/services/gatt/src/ble_svc_gatt.c
+  libraries/NimBLE-Arduino/src/nimble/host/services/ipss/src/ble_svc_ipss.c
+  libraries/NimBLE-Arduino/src/nimble/host/services/ans/src/ble_svc_ans.c
+  libraries/NimBLE-Arduino/src/nimble/host/services/tps/src/ble_svc_tps.c
+  libraries/NimBLE-Arduino/src/nimble/host/services/lls/src/ble_svc_lls.c
+  libraries/NimBLE-Arduino/src/nimble/host/util/src/addr.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/net.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/beacon.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/proxy.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/prov.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/lpn.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/testing.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/health_srv.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/health_cli.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/cfg_cli.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/model_srv.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/glue.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/cfg_srv.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/crypto.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/mesh.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/access.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/adv.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/transport.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/light_model.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/friend.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/model_cli.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/settings.c
+  libraries/NimBLE-Arduino/src/nimble/host/mesh/src/shell.c
+  libraries/NimBLE-Arduino/src/nimble/host/store/ram/src/ble_store_ram.c
+  libraries/NimBLE-Arduino/src/nimble/host/store/config/src/ble_store_nvs.c
+  libraries/NimBLE-Arduino/src/nimble/host/store/config/src/ble_store_config.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_gap.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_store_util.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_misc.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_hci_evt.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_gatts.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_uuid.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_flow.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_att_svr.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_hci_util.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_id.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_monitor.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_l2cap_sig_cmd.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_att.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_sm.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_periodic_sync.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_sm_lgcy.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_gatts_lcl.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_sm_cmd.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_mbuf.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_ibeacon.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_atomic.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_startup.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_l2cap.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_resolv.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_pvcy.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_att_clt.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_eddystone.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_stop.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_sm_alg.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_hci.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_sm_sc.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_shutdown.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_adv.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_gattc.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_l2cap_sig.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_log.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_l2cap_coc.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_att_cmd.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_store.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_dbg.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_cfg.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_conn.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_mqueue.c
+  libraries/NimBLE-Arduino/src/nimble/host/src/ble_hs_hci_cmd.c
+  libraries/NimBLE-Arduino/src/NimBLEScan.cpp
+  libraries/NimBLE-Arduino/src/NimBLERemoteDescriptor.cpp
+  libraries/NimBLE-Arduino/src/port/src/esp_nimble_mem.c
+  libraries/NimBLE-Arduino/src/NimBLEClient.cpp
+  libraries/NimBLE-Arduino/src/NimBLEEddystoneTLM.cpp
+  libraries/NimBLE-Arduino/src/NimBLEUUID.cpp
+  libraries/NimBLE-Arduino/src/NimBLEDescriptor.cpp
+  libraries/NimBLE-Arduino/src/NimBLEService.cpp
   )
 
 set(BLE_SRCS
@@ -143,6 +272,8 @@ set(includedirs
   libraries/WiFiClientSecure/src
   libraries/WiFi/src
   libraries/Wire/src
+  libraries/NimBLE-Arduino/src
+  tools/sdk/esp32/include/bt/include
   )
 
 set(srcs ${CORE_SRCS} ${LIBRARY_SRCS} ${BLE_SRCS})
