@@ -211,6 +211,26 @@ set(LIBRARY_SRCS
   libraries/NimBLE-Arduino/src/NimBLEUUID.cpp
   libraries/NimBLE-Arduino/src/NimBLEDescriptor.cpp
   libraries/NimBLE-Arduino/src/NimBLEService.cpp
+  libraries/NeoPixelBus/src/internal/RgbColor.cpp
+  libraries/NeoPixelBus/src/internal/NeoEsp32RmtMethod.cpp
+  libraries/NeoPixelBus/src/internal/HslColor.cpp
+  libraries/NeoPixelBus/src/internal/NeoEsp8266UartMethod.cpp
+  libraries/NeoPixelBus/src/internal/HtmlColorShortNames.cpp
+  libraries/NeoPixelBus/src/internal/RgbwColor.cpp
+  libraries/NeoPixelBus/src/internal/HtmlColor.cpp
+  libraries/NeoPixelBus/src/internal/NeoGamma.cpp
+  libraries/NeoPixelBus/src/internal/NeoPixelAvr.c
+  libraries/NeoPixelBus/src/internal/Esp32_i2s.c
+  libraries/NeoPixelBus/src/internal/SegmentDigit.cpp
+  libraries/NeoPixelBus/src/internal/HtmlColorNames.cpp
+  libraries/NeoPixelBus/src/internal/HtmlColorNameStrings.cpp
+  libraries/NeoPixelBus/src/internal/HsbColor.cpp
+  libraries/NeoPixelBus/src/internal/NeoPixelAnimator.cpp
+  libraries/EasyButton/src/Sequence.cpp
+  libraries/EasyButton/src/EasyButtonVirtual.cpp
+  libraries/EasyButton/src/EasyButtonBase.cpp
+  libraries/EasyButton/src/EasyButton.cpp
+  libraries/EasyButton/src/EasyButtonTouch.cpp
   )
 
 set(BLE_SRCS
@@ -278,6 +298,8 @@ set(includedirs
   libraries/WiFi/src
   libraries/Wire/src
   libraries/NimBLE-Arduino/src
+  libraries/NeoPixelBus/src
+  libraries/EasyButton/src
   tools/sdk/esp32/include/bt/include
   tools/sdk/esp32/include/esp_https_ota/include
   )
